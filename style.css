@@ -1,0 +1,509 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  background-color: white;
+}
+body.clicked {
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.universal-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.spaceForHeader {
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+}
+
+h2 {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+header .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+header .headerContainer .logoContainer {
+  display: flex;
+  align-items: center;
+}
+header .headerContainer .logoContainer img {
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .headerContainer .logoContainer span {
+  font-size: 40px;
+}
+header .headerContainer .logoContainer .portfolio {
+  color: gray;
+}
+header .headerContainer ul {
+  width: 70%;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .headerContainer ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .headerContainer ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+header .headerContainer ul li:hover {
+  background-color: black;
+}
+header .headerContainer ul li:hover a {
+  color: white;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+}
+main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .welcomeWords {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+main .welcomeWords.loaded {
+  opacity: 1;
+}
+main .welcomeWords.loaded .char {
+  display: inline-block;
+}
+main .welcomeWords .char {
+  opacity: 0;
+}
+main .welcomeWords.loaded .char {
+  animation-name: kf-animate-chars;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+main .welcomeWords.loaded .char:nth-child(1) {
+  animation-delay: 0.04s;
+}
+main .welcomeWords.loaded .char:nth-child(2) {
+  animation-delay: 0.08s;
+}
+main .welcomeWords.loaded .char:nth-child(3) {
+  animation-delay: 0.12s;
+}
+main .welcomeWords.loaded .char:nth-child(4) {
+  animation-delay: 0.16s;
+}
+main .welcomeWords.loaded .char:nth-child(5) {
+  animation-delay: 0.2s;
+}
+main .welcomeWords.loaded .char:nth-child(6) {
+  animation-delay: 0.24s;
+}
+main .welcomeWords.loaded .char:nth-child(7) {
+  animation-delay: 0.28s;
+}
+main .welcomeWords.loaded .char:nth-child(8) {
+  animation-delay: 0.32s;
+}
+main .welcomeWords.loaded .char:nth-child(9) {
+  animation-delay: 0.36s;
+}
+main .welcomeWords.loaded .char:nth-child(10) {
+  animation-delay: 0.4s;
+}
+main .welcomeWords.loaded .char:nth-child(11) {
+  animation-delay: 0.44s;
+}
+main .welcomeWords.loaded .char:nth-child(12) {
+  animation-delay: 0.48s;
+}
+main .welcomeWords.loaded .char:nth-child(13) {
+  animation-delay: 0.52s;
+}
+main .welcomeWords.loaded .char:nth-child(14) {
+  animation-delay: 0.56s;
+}
+main .welcomeWords.loaded .char:nth-child(15) {
+  animation-delay: 0.6s;
+}
+main .welcomeWords.loaded .char:nth-child(16) {
+  animation-delay: 0.64s;
+}
+main .welcomeWords.loaded .char:nth-child(17) {
+  animation-delay: 0.68s;
+}
+main .welcomeWords.loaded .char:nth-child(18) {
+  animation-delay: 0.72s;
+}
+main .welcomeWords.loaded .char:nth-child(19) {
+  animation-delay: 0.76s;
+}
+main .welcomeWords.loaded .char:nth-child(20) {
+  animation-delay: 0.8s;
+}
+main .welcomeWords.loaded .char:nth-child(21) {
+  animation-delay: 0.84s;
+}
+main .welcomeWords.loaded .char:nth-child(22) {
+  animation-delay: 0.88s;
+}
+main .welcomeWords.loaded .char:nth-child(23) {
+  animation-delay: 0.92s;
+}
+main .welcomeWords.loaded .char:nth-child(24) {
+  animation-delay: 0.96s;
+}
+main .welcomeWords.loaded .char:nth-child(25) {
+  animation-delay: 1s;
+}
+main .welcomeWords.loaded .char:nth-child(26) {
+  animation-delay: 1.04s;
+}
+main .welcomeWords.loaded .char:nth-child(27) {
+  animation-delay: 1.08s;
+}
+main .welcomeWords.loaded .char:nth-child(28) {
+  animation-delay: 1.12s;
+}
+main .welcomeWords.loaded .char:nth-child(29) {
+  animation-delay: 1.16s;
+}
+main .welcomeWords.loaded .char:nth-child(30) {
+  animation-delay: 1.2s;
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#aboutMe .aboutMeContent {
+  display: flex;
+  align-items: center;
+}
+#aboutMe .aboutMeContent img {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#aboutMe .aboutMeContent ul {
+  padding-left: 60px;
+  font-weight: 700;
+}
+#aboutMe .aboutMeContent li {
+  list-style: circle;
+  font-size: 20px;
+  color: black;
+  transition: all 0.8s;
+  opacity: 0;
+}
+#aboutMe.inview li {
+  opacity: 1;
+  transform: translateX(40px);
+}
+#aboutMe.inview li:nth-child(1) {
+  transition-delay: 1s;
+}
+#aboutMe.inview li:nth-child(2) {
+  transition-delay: 2s;
+}
+#aboutMe.inview li:nth-child(3) {
+  transition-delay: 3s;
+}
+#aboutMe.inview li:nth-child(4) {
+  transition-delay: 4s;
+}
+#aboutMe.inview li:nth-child(5) {
+  transition-delay: 5s;
+}
+#aboutMe.inview li:nth-child(6) {
+  transition-delay: 6s;
+}
+#aboutMe.inview li:nth-child(7) {
+  transition-delay: 7s;
+}
+#aboutMe.inview li:nth-child(8) {
+  transition-delay: 8s;
+}
+#aboutMe.inview li:nth-child(9) {
+  transition-delay: 9s;
+}
+#aboutMe.inview li:nth-child(10) {
+  transition-delay: 10s;
+}
+
+#portfolio h2 {
+  display: block;
+  width: 100%;
+}
+#portfolio .portfolioContainer {
+  display: flex;
+}
+#portfolio .portfolioContainer img {
+  width: 50%;
+}
+#portfolio .portfolioContainer .myWorks {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16.5px 0;
+}
+#portfolio .portfolioContainer .myWorks .work {
+  position: relative;
+  width: 40%;
+  height: 142.41px;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+#portfolio .portfolioContainer .myWorks .work p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#portfolio .portfolioContainer .myWorks .work.portfolioSite {
+  background-image: url(../portfolio/img/portfolioSite.png);
+}
+#portfolio .portfolioContainer .myWorks .work.scraping {
+  background-image: url(../portfolio/img/scraping.png);
+}
+#portfolio .portfolioContainer .myWorks .work.analysis {
+  background-image: url(../portfolio/img/analysis.png);
+}
+#portfolio .portfolioContainer .myWorks .work:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 50px -5px rgba(0, 0, 0, 0.9);
+}
+#portfolio .portfolioContainer .myWorks .work:hover p {
+  opacity: 1;
+}
+#portfolio .portfolioContainer .myWorks .work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+#portfolio .portfolioContainer .myWorks .work:hover::before {
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+#portfolio .overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 25;
+  pointer-events: none;
+  opacity: 0;
+}
+#portfolio .overlay.clicked {
+  opacity: 1;
+}
+#portfolio .clickUp {
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 50px -5px rgba(0, 0, 0, 0.9);
+}
+#portfolio .clickUp.clicked {
+  opacity: 1;
+  z-index: 30;
+}
+#portfolio .clickUp .closebutton {
+  position: absolute;
+  top: 5%;
+  left: 97%;
+  width: 50px;
+  height: 15px;
+  background-color: black;
+  transform-origin: center;
+  cursor: pointer;
+  z-index: 40;
+}
+#portfolio .clickUp .closebutton:first-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#portfolio .clickUp .closebutton:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#portfolio .clickUp .workContentLeft {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  width: 48%;
+  height: 100%;
+}
+#portfolio .clickUp .workContentLeft h2 {
+  width: 100%;
+  font-size: 30px;
+  margin: 20px 0;
+}
+#portfolio .clickUp .workContentLeft h3 {
+  margin: 10px 0;
+}
+#portfolio .clickUp .workContentLeft p {
+  width: 100%;
+  line-height: 2.2;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+#portfolio .clickUp .workContentLeft a {
+  line-height: 2.2;
+  padding-left: 21px;
+  color: blue;
+}
+#portfolio .clickUp .workContentLeft a span {
+  color: black;
+  cursor: default;
+}
+#portfolio .clickUp .workContentRight {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#portfolio .clickUp .workContentRight a {
+  width: 80%;
+}
+#portfolio .clickUp .workContentRight img {
+  width: 100%;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+#contact {
+  background-color: white;
+  height: calc(100vh - 120px) !important;
+}
+#contact .contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+}
+#contact .contactContainer .contactMethod {
+  margin: 0 auto;
+  display: flex;
+}
+#contact .contactContainer .contactMethod img {
+  width: 40px;
+}
+#contact .contactContainer a {
+  width: 150px;
+  font-size: 20px;
+  -webkit-text-decoration: underline solid black;
+          text-decoration: underline solid black;
+  text-underline-offset: 10px;
+  transition: all 0.3s ease;
+  display: block;
+  text-align: center;
+}
+#contact .contactContainer a:hover {
+  -webkit-text-decoration: underline solid rgba(0, 0, 0, 0);
+          text-decoration: underline solid rgba(0, 0, 0, 0);
+  text-underline-offset: 15px;
+}
+
+footer {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(238, 238, 224);
+  display: flex;
+  align-items: center;
+}
+footer .copyright {
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
