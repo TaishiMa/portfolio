@@ -14,6 +14,7 @@
     <title>TAISHIのポートフォリオ</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <header id="header">
       <div class="universal-wrapper headerContainer">
         <div class="logoContainer">
@@ -21,14 +22,29 @@
           <span>Taishi's&nbsp;</span>
           <span class="portfolio">Portfolio</span>
         </div>
-        <ul>
-          <li><a href="#main-img">トップ</a></li>
-          <li><a href="#aboutMe">私について</a></li>
-          <li><a href="#portfolio">ポートフォリオ</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
+        <ul class="navi">
+          <li class="navi-li"><a href="#main-img" class="navi-a">トップ</a></li>
+          <li class="navi-li"><a href="#aboutMe" class="navi-a">私について</a></li>
+          <li class="navi-li"><a href="#portfolio" class="navi-a">ポートフォリオ</a></li>
+          <li class="navi-li"><a href="#contact" class="navi-a">お問い合わせ</a></li>
         </ul>
       </div>
+      <button class="menu-button">
+        <span></span> 
+        <span></span> 
+        <span></span> 
+      </button>
     </header>
+    <div class="menu">
+      <div class="closebutton"></div>
+      <div class="closebutton"></div>
+      <ul class="menu-navi">
+        <li class="menu-navi-li"><a href="#main-img" class="menu-navi-a">トップ</a></li>
+        <li class="menu-navi-li"><a href="#aboutMe" class="menu-navi-a">私について</a></li>
+        <li class="menu-navi-li"><a href="#portfolio" class="menu-navi-a">ポートフォリオ</a></li>
+        <li class="menu-navi-li"><a href="#contact" class="menu-navi-a">お問い合わせ</a></li>
+      </ul>
+    </div>
     <main id="main-img">
       <img src="img/main-img.jpg" alt="" />
       <p class="welcomeWords">Welcome to My Portfolio!</p>
@@ -63,11 +79,10 @@
             <p>スクレイピング</p>
           </div>
           <div class="work analysis">
-            <p>データ解析・機械学習</p>
+            <p>データ解析</p>
           </div>
         </div>
       </div>
-      <div class="overlay"></div>
       <div class="clickUp portfolioDetail">
         <div class="closebutton"></div>
         <div class="closebutton"></div>
@@ -78,18 +93,18 @@
             HTML、CSS、JavaScriptの基本的な学習をビデオ教材を通じて一通り行った後、復習と、表現の幅を学ぶ目的で下記ページを参考にいくつかのHPの模写を行った。 <br>
             細かいデザイン、レスポンシブにこだわり、HTML、CSSについてデザイン通りのHPを作るスキルが身についた。<br>
           </p>
-          <a href="https://code-jump.com/coding-step/">https://code-jump.com/coding-step/</a>
+          <a href="https://code-jump.com/coding-step/">リンク</a>
           <h3>2. ポートフォリオサイト作成</h3>
           <p>
             案件応募の際のスキル提示資料の作成を目的にポートフォリオサイトを作成した。特にJavaScriptを用いた動的な動作については、確認しながら積極的に導入した。デバックはAIを活用したことで効率的に行えた。
           </p>
-          <a href="">GitHub</a><span>　☜コード</span>
+          <a href="https://github.com/TaishiMa/portfolio">GitHub</a><span>　☜コード</span>
         </div>
         <div class="workContentRight">
-          <a href="">
+          <a href="https://taishima.github.io/portfolio/">
           <img src="img/portfolioWorks.png" alt="">
           </a>
-          <a href="">
+          <a href="https://taishima.github.io/trainingsite/">
             <img src="img/trainingSite.png" alt="">
           </a>
         </div>
@@ -100,24 +115,23 @@
           <div class="workContent">
           <div class="workContentLeft">
             <h2>スクレイピング</h2>
-            <h3>1. HP模写</h3>
+            <h3>1. Instagramアカウントからの画像収集</h3>
             <p>
-              HTML、CSS、JavaScriptの基本的な学習をビデオ教材を通じて一通り行った後、復習と、表現の幅を学ぶ目的で下記ページを参考にいくつかのHPの模写を行った。 <br>
-              細かいデザイン、レスポンシブにこだわり、HTML、CSSについてデザイン通りのHPを作るスキルが身についた。<br>
+              ライブラリSeleniumを用いて、Instagramへのログイン、ポップアップ画面のクローズ、検索、スクロールを自動で行い、ライブラリRequests、BeautifulSoupを用いて特定のアカウントに投稿されている写真を取得、ダウンロードしました。
             </p>
-            <a href="https://code-jump.com/coding-step/">https://code-jump.com/coding-step/</a>
-            <h3>2. ポートフォリオサイト作成</h3>
+            <a href="https://www.instagram.com/paulnicklen/">paulnicklen氏のInstagram</a><br>
+            <h3>2. Antennaにおける特定の情報の収集</h3>
             <p>
-              案件応募の際のスキル提示資料の作成を目的にポートフォリオサイトを作成した。特にJavaScriptを用いた動的な動作については、確認しながら積極的に導入した。デバックはAIを活用したことで効率的に行えた。
+              400もの提携メディアから流行のコンテンツを提供するキュレーションサービスであるAntennaにおいて「ノートPC」と検索した際にヒットした記事のタイトル、サムネイル画像、URLを上記ライブラリを用いて、すべて取得しました。
             </p>
-            <a href="">GitHub</a><span>　☜コード</span>
+            <a href="https://github.com/TaishiMa/scraping">GitHub</a><span>　☜コード</span>
           </div>
           <div class="workContentRight">
-            <a href="">
-            <img src="img/portfolioWorks.png" alt="">
+            <a href="https://github.com/TaishiMa/scraping/blob/main/%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0.ipynb">
+            <img src="img/scraping.png" alt="">
             </a>
-            <a href="">
-              <img src="img/trainingSite.png" alt="">
+            <a href="https://github.com/TaishiMa/scraping/blob/main/Antenna%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0.ipynb">
+              <img src="img/Antenna.png" alt="">
             </a>
           </div>
         </div>
@@ -129,25 +143,21 @@
         <div class="closebutton"></div>
           <div class="workContent">
           <div class="workContentLeft">
-            <h2>データ解析・機械学習</h2>
-              <h3>1. HP模写</h3>
+            <h2>データ解析</h2>
+              <h3>1. クラスター解析と回帰分析</h3>
               <p>
-                HTML、CSS、JavaScriptの基本的な学習をビデオ教材を通じて一通り行った後、復習と、表現の幅を学ぶ目的で下記ページを参考にいくつかのHPの模写を行った。 <br>
-                細かいデザイン、レスポンシブにこだわり、HTML、CSSについてデザイン通りのHPを作るスキルが身についた。<br>
+                Pythonによるデータ解析です。ライブラリとしてpandas、matplotlib、seaborn、scikit-learn、SciPyなどを使用します。クラスター解析は複数のデータに対して、データの中に存在する自然なグループやパターンを見つけ、データを分類組み分け、可視化する手法です。回帰分析は、データにおける目的変数と説明変数の関係性をモデル化し、特定の変数の値を予測することや、変数間の関係性を理解するための手法です。<br>
+                本業の研究業務において行うことが多く、例えば、ある材料の特性を増加させるために、合成条件（温度、合成時間、添加剤、原材料量など）を最適化させるための予測モデル作成に使用するなどに活用します。<br>
+                右図は以下のオープンソースにおける分析例です。
               </p>
-              <a href="https://code-jump.com/coding-step/">https://code-jump.com/coding-step/</a>
-              <h3>2. ポートフォリオサイト作成</h3>
-              <p>
-                案件応募の際のスキル提示資料の作成を目的にポートフォリオサイトを作成した。特にJavaScriptを用いた動的な動作については、確認しながら積極的に導入した。デバックはAIを活用したことで効率的に行えた。
-              </p>
-              <a href="">GitHub</a><span>　☜コード</span>
+              <a href="https://github.com/hkaneko1985/python_chem_chem_eng">オープンソース</a>
             </div>
             <div class="workContentRight">
-              <a href="">
-              <img src="img/portfolioWorks.png" alt="">
+              <a href="https://github.com/hkaneko1985/python_chem_chem_eng/blob/main/sample_program_8_5.ipynb">
+              <img src="img/heatMap.png" alt="" class="analysisImg">
               </a>
-              <a href="">
-                <img src="img/trainingSite.png" alt="">
+              <a href="https://github.com/hkaneko1985/python_chem_chem_eng/blob/main/sample_program_8_4.ipynb">
+                <img src="img/kaiki.png" alt="" class="analysisImg">
               </a>
             </div>
           

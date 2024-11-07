@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const body = document.body;
+  const html = document.documentElement;
   const portfolioDetail = document.querySelector(".portfolioDetail");
   const scrapingDetail = document.querySelector(".scrapingDetail");
   const analysisDetail = document.querySelector(".analysisDetail");
@@ -38,28 +38,46 @@ document.addEventListener("DOMContentLoaded", function () {
   const trigger3 = document.querySelector(".analysis");
   const closebuttons = document.querySelectorAll(".closebutton");
   const overlay = document.querySelector(".overlay");
+  const menuButton = document.querySelector(".menu-button");
+  const menu = document.querySelector(".menu");
 
   trigger1.addEventListener("click", function () {
-    body.classList.add("clicked");
+    html.classList.add("clicked");
     portfolioDetail.classList.add("clicked");
     overlay.classList.add("clicked");
   });
 
   trigger2.addEventListener("click", function () {
-    body.classList.add("clicked");
+    html.classList.add("clicked");
     scrapingDetail.classList.add("clicked");
     overlay.classList.add("clicked");
   });
 
   trigger3.addEventListener("click", function () {
-    body.classList.add("clicked");
+    html.classList.add("clicked");
     analysisDetail.classList.add("clicked");
     overlay.classList.add("clicked");
   });
 
+  menuButton.addEventListener("click", function () {
+    html.classList.add("clicked");
+    menu.classList.add("clicked");
+    overlay.classList.add("clicked");
+  });
+
+  overlay.addEventListener("click", function () {
+    html.classList.remove("clicked");
+    menu.classList.remove("clicked");
+    portfolioDetail.classList.remove("clicked");
+    scrapingDetail.classList.remove("clicked");
+    analysisDetail.classList.remove("clicked");
+    overlay.classList.remove("clicked");
+  });
+
   closebuttons.forEach((closebutton) => {
     closebutton.addEventListener("click", function () {
-      body.classList.remove("clicked");
+      html.classList.remove("clicked");
+      menu.classList.remove("clicked");
       portfolioDetail.classList.remove("clicked");
       scrapingDetail.classList.remove("clicked");
       analysisDetail.classList.remove("clicked");
